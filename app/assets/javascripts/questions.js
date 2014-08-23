@@ -171,14 +171,18 @@ $(".ans2").click(function() {
 
 //third Question
 
-$(".btn").click(function() {
+$(".3").click(function() {
       ans_3= $(this).attr("id");
-      if (ans_3 == "first") {
-        choice_3=-200;
-  } else if ( ans_3 == "second") {
+      if (ans_3 == "one") {
+        choice_3=-600;
+  } else if ( ans_3 == "two") {
+        choice_3=3000;
+  } else if ( ans_3 == "three") {
         choice_3=0;
-  } else if ( ans_3 == "third") {
-        choice_3=200;
+  }else if ( ans_3 == "four") {
+        choice_3=-300;
+  }else if ( ans_3 == "five") {
+        choice_3=-600;
   };
        
   $(".question3").css("display","none");
@@ -192,11 +196,11 @@ $(".btn").click(function() {
 //Fourth Question
 $(".4").click(function() {
       ans_4= $(this).attr("id");
-      if (ans_4 == "black") {
+      if (ans_4 == "modern") {
         choice_4=100;
-  } else if ( ans_4 == "red") {
+  } else if ( ans_4 == "sleek") {
         choice_4=0;
-  } else if ( ans_4 == "white") {
+  } else if ( ans_4 == "elegant") {
         choice_4=-100;
   };
        
@@ -208,19 +212,19 @@ $(".4").click(function() {
 })
 
 //Fifth Question
-$(".ans5").click(function() {
+$(".5").click(function() {
        ans_5= $(this).attr("id");
-      if (ans_5 == "morning") {
+      if (ans_5 == "white") {
         choice_5=100;
-  } else if ( ans_5 == "afternoon") {
+  } else if ( ans_5 == "red") {
         choice_5=0;
-  } else if ( ans_5 == "night") {
+  } else if ( ans_5 == "black") {
         choice_5=-100;
   };
       
   console.log(ans_5);
   console.log(choice_5);
-  setTimeout('window.location.href = results',10);
+  //setTimeout('window.location.href = results',10);
   return rscore = choice_1 + choice_2 + choice_3 + choice_4 + choice_5;
   //send rscore to server to get 3 closest matches
   
