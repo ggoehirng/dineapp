@@ -1,1 +1,19 @@
-<p> start page</p>
+  <div class="container" id='startcontainer'>
+  <div id="left" class="column">
+    <button id="22" class="box"><p>Edit Your Flavor Profile</p></button>
+  </div>
+  <div id="middle" class="column">
+    
+      <button id="quizb" class="box">
+        <p> Take the Quiz </p>
+      </button>
+    <script> 
+      var url= 'questions.html';
+      $('#quizb').click(function(){
+  window.location.href='questions.html'});
+    </script>
+  </div>
+  <div id="right" class="column">
+    <button id="searchb" class="box" url('../HTML/questions.html')  ><p>Search Restaurants by Name</p></button>
+  </div>
+</div>
