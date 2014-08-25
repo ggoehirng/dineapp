@@ -1,3 +1,4 @@
+//Navbar styling
 $navbar-border-radius: 0px;
 $navbar-inverse-link-color: #fff;
 $navbar-margin-bottom: 0px;
@@ -5,8 +6,27 @@ $progress-bar-bg: #000;
 .navbar-left{
 	margin-left:500px
 }
-/*.navbar-brand{
-	top:0%;
-	margin-left:15px
-}*/
+
+.alert{
+	margin-top:20px;
+	margin-bottom: 0px
+}
+//registration styling
+.panel{
+	text-align:center;
+	
+}
+
+.devise-panel{
+	width:40%;
+	margin:0 auto
+}
+
+.devise-field{
+	margin-bottom: 15px;
+}
+.devise-button{
+margin-top:15px
+}
+
 @import 'bootstrap';
