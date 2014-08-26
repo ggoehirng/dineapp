@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
+  before_action :authenticate_user!, except: [:home, :start]
   def home
-  end
+  end  
   def start
   end
   def questions

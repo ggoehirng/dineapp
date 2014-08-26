@@ -1,15 +1,17 @@
 //Navbar styling
 $navbar-border-radius: 0px;
 $navbar-inverse-link-color: #fff;
-$navbar-margin-bottom: 0px;
+//$navbar-margin-bottom: 0px;
 $progress-bar-bg: #000;
 .navbar-left{
 	margin-left:500px
 }
 
 .alert{
+	width: 96%;
+	text-align:center;
+	margin: 0 auto;
 	margin-top:20px;
-	margin-bottom: 0px
 }
 //registration styling
 .panel{
@@ -19,7 +21,8 @@ $progress-bar-bg: #000;
 
 .devise-panel{
 	width:40%;
-	margin:0 auto
+	margin:0 auto;
+	margin-top:5%
 }
 
 .devise-field{
@@ -28,5 +31,7 @@ $progress-bar-bg: #000;
 .devise-button{
 margin-top:15px
 }
-
+.devise-edit{
+	margin-top: 0px;
+}
 @import 'bootstrap';

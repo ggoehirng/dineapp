@@ -1,19 +1,13 @@
-  <div class="container" id='startcontainer'>
-  <div id="left" class="column">
-    <button id="22" class="box"><p>Edit Your Flavor Profile</p></button>
-  </div>
-  <div id="middle" class="column">
-    
-      <button id="quizb" class="box">
-        <p> Take the Quiz </p>
-      </button>
-    <script> 
-      var url= 'questions.html';
-      $('#quizb').click(function(){
-  window.location.href='questions.html'});
-    </script>
-  </div>
-  <div id="right" class="column">
-    <button id="searchb" class="box" url('../HTML/questions.html')  ><p>Search Restaurants by Name</p></button>
+<div class="container-fluid">
+  <div class= "rectangle">
+      <div id="left" class="row">
+        <%= button_to "Edit Your Flavor Profile", edit_user_registration_path, id: "flavorprof", class: "box", method: :get %>
+      </div>
+      <div id="middle" class="row">
+          <%=button_to "Take the Quiz", questions_path, class: "box", id:'quizb', method: :get %>
+      </div>
+      <div id="right" class="row">
+        <button id="searchb" class="box"><p>Search Restaurants by Name</p></button>
+      </div>
   </div>
 </div>

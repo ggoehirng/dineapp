@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   get "questions" => "pages#questions"
   get "results" => "pages#results"
   get "restaurant" => "pages#restaurant"
+  authenticated :user do
+    root :to => "pages#start", :as => "root_path"
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

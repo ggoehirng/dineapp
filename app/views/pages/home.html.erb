@@ -1,8 +1,9 @@
-
-<div class='container'>
+<div class="container">
+	<div class='spacer'></div>
 	<div class='jumbotron'>
 		<h1> Welcome to Dine. </h1>
-	<button type="button" class="btn btn-default">Login</button>
-	<button type="button" class="btn btn-default">Sign up</button>
+		<%= link_to "Log in", new_user_session_path, class: "btn btn-default" %>
+		<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary" %>
 	</div>
 </div>
+
