@@ -1,0 +1,26 @@
+<table class='table'>
+	<thead>
+		<tr> 
+			<th>Name </th>
+			<th>Email</th> 
+			<th> Sign in Count </th>
+			<th> Last Sign in</th>
+			<th> Signed Up </th>
+			<th> Admin? </th>
+		</tr>
+	</thead>
+	<tbody>
+		
+		<% @users = User.all.order('firstname') %>
+		<% @users.each do |user| %>
+ <tr>
+	 <td> <%= user.lastname%> <%= user.firstname %></td>
+	 <td><%= user.email %></td>
+	 <td><%= user.sign_in_count %> </td>
+	 <td><%= user.last_sign_in_at.to_date.strftime('%m/%d/%Y') %> </td>
+	 <td><%= user.created_at.to_date.strftime('%m/%d/%Y') %> </td>
+	 <td><%= user.admin %></td>
+</tr>
+<% end %>
+</tbody>
+</table>

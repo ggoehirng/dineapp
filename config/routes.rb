@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get "questions" => "pages#questions"
   get "results" => "pages#results"
   get "restaurant" => "pages#restaurant"
+  get "user_list" => "pages#user_list"
   authenticated :user do
     root :to => "pages#start", :as => "root_path"
   end

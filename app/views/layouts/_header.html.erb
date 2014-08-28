@@ -20,15 +20,16 @@
 
      
       <ul class="nav navbar-nav navbar-right"
+        <% if current_user.try(:admin?) %>
         <li class="divider"></li>
-            <% if current_user.admin?%>
               <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin Tools<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-          <li>One</li>
+          <li><%= link_to "Restaurant List", restaurants_path%></li>
+          <li><%= link_to "User List", user_list_path%></li>
           </ul>
         </li>
-        <%end%>
+        <% end %>
             <% if user_signed_in? %>
               <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= current_user.firstname %><span class="caret"></span></a>
