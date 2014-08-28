@@ -1,0 +1,16 @@
+<div class="panel panel-default devise-panel devise-edit">
+  <div class="panel-body form-group">
+  <p> Update your flavor profile so that we can provide better recommendations. </p>
+  <%= form_for(resource, as: resource_name, url: flavor_profile_path(resource_name), html: { method: :put }) do |f| %>
+  <%= devise_error_messages! %>
+
+   <div class='formgroup'><%= f.label :current_City %><br />
+  <%= f.number_field :city, autofocus: true, class: 'form-control devise-field' %></div>
+
+  <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+    <%= f.password_field :current_password, autocomplete: "off", class: 'form-control devise-field' %></div>
+
+  <div><%= f.submit "Update", class: 'btn btn-default devise-field devise-button'  %></div>
+<% end %>
+   </div>
+</div>

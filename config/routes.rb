@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :restaurants
+
   devise_for :users
   root 'pages#home'
   get "start" => "pages#start"
@@ -8,6 +10,10 @@ Rails.application.routes.draw do
   authenticated :user do
     root :to => "pages#start", :as => "root_path"
   end
+   devise_scope :user do 
+     get "flavor_profile" => 'devise/registrations#flavor_profile'
+     get '/flavor_profile' => 'registrations#flavor_profile', as: :settings
+end 
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

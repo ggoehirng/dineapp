@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @restaurant.name %>
+</p>
+
+<p>
+  <strong>Cuisine:</strong>
+  <%= @restaurant.cuisine %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @restaurant.address %>
+</p>
+
+<p>
+  <strong>Neigborhood:</strong>
+  <%= @restaurant.neigborhood %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @restaurant.website %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @restaurant.phone_number %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @restaurant.description %>
+</p>
+
+<p>
+  <strong>Price range:</strong>
+  <%= @restaurant.price_range %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @restaurant.color %>
+</p>
+
+<p>
+  <strong>Theme:</strong>
+  <%= @restaurant.theme %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @restaurant.score %>
+</p>
+
+<%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
+<%= link_to 'Back', restaurants_path %>

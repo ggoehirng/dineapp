@@ -16,8 +16,8 @@ $progress-bar-bg: #000;
 //registration styling
 .panel{
 	text-align:center;
-	
 }
+
 
 .devise-panel{
 	width:40%;
@@ -34,4 +34,12 @@ margin-top:15px
 .devise-edit{
 	margin-top: 0px;
 }
+
+.devise-register{
+	width: 60%;
+	margin-top:auto;
+
+}
+
+
 @import 'bootstrap';

@@ -10,4 +10,6 @@ class PagesController < ApplicationController
   end
   def restaurant
   end
+  def flavor_profile
+  end
 end
