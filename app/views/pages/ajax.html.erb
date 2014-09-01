@@ -1,0 +1,46 @@
+<div class='container'>
+<div class='restaurants'>
+
+</div>
+</div>
+<script>
+var url= "../restaurants.json";
+var r0 = {};
+var score= Number(window.location.href.split('?')[1]);
+var numb = 0;	
+$.getJSON("../restaurants.json", function(response){
+  console.log("response = "+ response);
+  $.each(response, function(index, rest){
+    
+    console.log( "response = "+ index);
+    console.log(rest);
+    if (rest.score == score){
+    	numb += 1;
+      var r0 = { name: rest.name, image:rest.image, cuisine:rest.cuisine, description:rest.description, address: rest.address, website:rest.website, score: rest.score}
+      address1 = r0.address.split('%')[0];
+      address2 = r0.address.split('%')[1];
+      $('.restaurants').prepend("<div id='result" + numb +"'' class='restaurant'" + 
+        "<h2 id='rname" + numb+ "' class='restaurant_name'>" + r0.name + "</h2>" +
+        "<div id='rpicture" + numb + "' class='rpicture'></div>" +
+       	"<div id='rinfo" + numb + "' class='rinfo'>" +
+          "<p id='cuisine" + numb + "'class='rcuisine'>" +
+          r0.cuisine + 
+          "</p>" +
+          "<p id='desc" + numb+ "' class='rdesc'>" + r0.description + "</p>" +
+          "<p id='address" + numb + "' class='raddress'>" +
+          address1 + "<br>" + address2 +
+          "</p>" +
+          "</div>" +
+          "<button class='more btn btn-default' id='more" + numb + "'>View More</button>" +
+        "</div>");
+        $('#rpicture' + numb).css('content', r0.image)
+      console.log('success' + index + " " +numb);
+  } else{
+    console.log('no matches');
+  }
+    
+ })});
+  
+
+ 
+</script>

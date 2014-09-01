@@ -7,7 +7,10 @@ Rails.application.routes.draw do
   get "questions" => "pages#questions"
   get "results" => "pages#results"
   get "restaurant" => "pages#restaurant"
+  get "questiontest" => "pages#questiontest"
   get "user_list" => "pages#user_list"
+  get "result" => "restaurants#result"
+  get "ajax" => "pages#ajax"
   authenticated :user do
     root :to => "pages#start", :as => "root_path"
   end

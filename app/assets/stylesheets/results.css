@@ -1,31 +1,25 @@
 /**Result Cards-format**/
 #container{
-  margin-top:40p;
   min-width:1000px;
   
    }
 
+.restaurants{
+  text-align: center;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: row;
+}
+
 .restaurant{
   background-color: #ECF0F1;
-  margin:5% 2% 5%%;
+  margin:0 auto;
   height:475px;
   width:250px;
   border:0px black solid;
-  left:5%;
-  margin-top:100px;
-  position:absolute;
-  z-index:3
+  position:relative;
+  z-index:3;
   }
-
-#result2{
-  position:absolute;
-  left:35%;}
- 
-
-#result3{
-  left: 65%;
-  position:absolute
-}
 
 /**Pictures**/
 .rpicture{
@@ -38,39 +32,17 @@
   margin-bottom:30px;
   border:black solid 3px}
 
-#rpicture1{
-  content:url(../images/91.png)}
 /**Buttons**/
 .more{
   position:relative;
-  height:30px;
-  width: 76px;
+  height:40px;
+  width: 90px;
   border-radius:0px;
-  left:35%;
   border:none;
   background:#DADFE1;
   top:-40px
   
   }
-
-#retake{
-  background:#ECF0F1;
-  height:35px;
-  width:300px;
-  color:grey;
-  position:fixed;
-  text-align:center;
-  border:none;
-  bottom:10px;
-  right: 175px;
-  z-index:1
-}
-
-#rt{
-  font-family:'Roboto', sans-serif;
-  bottom: 8px;
-  position:relative
-}
 
 /**Text Formatting Front**/
 .restaurant_name,.rcuisine, .rdesc, .raddress, .rcuisine2{

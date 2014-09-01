@@ -1,4 +1,3 @@
-
 var choice_1;
 var choice_2;
 var choice_3=3; 
@@ -11,7 +10,8 @@ var ans_4;
 var ans_5;
 var bos;
 var rscore;
-var results= '../HTML/results.html'
+var results= '../ajax.html?'
+
 function random(x,y) {
     return Math.floor(Math.random() * (x-y+1) + y)} ;
 
@@ -224,13 +224,11 @@ $(".5").click(function() {
       
   console.log(ans_5);
   console.log(choice_5);
-  //setTimeout('window.location.href = results',10);
-  return rscore = choice_1 + choice_2 + choice_3 + choice_4 + choice_5;
-  //send rscore to server to get 3 closest matches
-  
+  rscore  = choice_1 + choice_2 + choice_3 + choice_4+ choice_5; 
+  window.location.href= results + rscore  
  
-  
 })
 
+  
 
       

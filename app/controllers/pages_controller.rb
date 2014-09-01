@@ -12,4 +12,6 @@ class PagesController < ApplicationController
   end
   def flavor_profile
   end
+  def ajax
+  end
 end

@@ -10,6 +10,7 @@ class RestaurantsController < ApplicationController
   # GET /restaurants/1
   # GET /restaurants/1.json
   def show
+  
   end
 
   # GET /restaurants/new
@@ -19,6 +20,7 @@ class RestaurantsController < ApplicationController
 
   # GET /restaurants/1/edit
   def edit
+
   end
 
   # POST /restaurants
@@ -34,6 +36,7 @@ class RestaurantsController < ApplicationController
         format.json { render json: @restaurant.errors, status: :unprocessable_entity }
       end
     end
+    
   end
 
 
@@ -71,6 +74,6 @@ class RestaurantsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def restaurant_params
-      params.require(:restaurant).permit(:name, :cuisine, :address, :neigborhood, :website, :phone_number, :description, :price_range, :color, :theme, :score)
+      params.require(:restaurant).permit(:name, :cuisine, :address, :neigborhood, :website, :phone_number, :description, :price_range, :color, :theme, :score, :id, :image)
     end
 end

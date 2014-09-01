@@ -1,8 +1,22 @@
-<h1>Listing restaurants</h1>
+<div class='container' id='listcontainer'>
+  <style type="text/css"> 
+  #listcontainer{
+    overflow: scroll;
+    margin: 0px;
+    padding: 0px;
+    width: 100%
+  }
 
-<table class='table'>
+  .rtable{
+    height: 100%
+  }
+
+
+    </style>
+<table class='table rtable'>
   <thead>
     <tr>
+      <th> ID </th>
       <th>Name</th>
       <th>Cuisine</th>
       <th>Address</th>
@@ -21,6 +35,7 @@
   <tbody>
     <% @restaurants.each do |restaurant| %>
       <tr>
+        <td><%= restaurant.id %> </td>
         <td><%= restaurant.name %></td>
         <td><%= restaurant.cuisine %></td>
         <td><%= restaurant.address %></td>
@@ -46,3 +61,4 @@
 <% if current_user.try(:admin?) %>
 <%= link_to 'New Restaurant', new_restaurant_path, class: "btn btn-success" %>
 <%end%>
+</div>
