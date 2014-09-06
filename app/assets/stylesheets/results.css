@@ -27,9 +27,8 @@
   width: 200px;
   border-radius:50%;
   position:relative;
-  left: 25px;
-  margin-left:0;
-  margin-bottom:30px;
+  margin: 0 auto;
+  margin-bottom:1%;
   border:black solid 3px}
 
 /**Buttons**/
@@ -53,7 +52,7 @@
   font-size: .85em;
 }
 .restaurant_name{
-  font-size:1.5em;
+  font-size:1.8em;
   margin-top:3%}
 .raddress{
   margin-bottom:10px}
