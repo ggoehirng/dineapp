@@ -84,11 +84,10 @@ $("#next").click(function(){
     $(".progress-bar").css("width", "80%");
   
   } else{
-    $('#warning').css("display",'block');
-    $('body').mousemove(function(){$('#warning').fadeOut('slow');
-});
-  };
-});
+    $('.alert').css('display','block');
+    console.log('no')
+
+}});
 
 //First Question
 $(".ans1").click(function() {

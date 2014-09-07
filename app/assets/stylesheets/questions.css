@@ -1,6 +1,11 @@
 #filler{
   height:10px}
 
+#alert1{
+  display: none;
+  margin-bottom: 0px
+}
+
 /**NAV BAR**/
 
 #navbar{
