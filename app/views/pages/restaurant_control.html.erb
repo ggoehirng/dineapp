@@ -1,13 +1,13 @@
  <div class='container rcont'>
         <div class='screen'>
-         <iframe id='frame' src=''></iframe>
+         <iframe src="" id='frame'></iframe>
        </div>
       
       <div id='wrapper'>
         <div id='left' class='bar'></div>
         <div id='control' class='bar'>
         <ul class="tablist">
-          <li><button class='bottomb' id='b1'>Results</button></li>
+          <li><FORM><INPUT Type="button" VALUE="Results" onClick="history.go(-1);return true;" class='bottomb' id='b1'></FORM></li>
           <li><button class='bottomb' id='b2'>Restaurant Home</button></li>
           <li><button class='bottomb' id='b3'>Book Now</button></li>
         </ul>
@@ -15,7 +15,8 @@
         <div id='right' class='bar'></div>
       </div>
 </div>
+<style type="text/css"> body{overflow: hidden;}</style>
   
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
-<!--<script src="../jscript/results.js"></script>-->
+<script src="/assets/restaurant.js"></script>
