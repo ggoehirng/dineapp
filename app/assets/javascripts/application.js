@@ -14,5 +14,5 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require turbolinks
-//= require_directory assets
+//= require_directory ../../assets
 //= require_tree .
