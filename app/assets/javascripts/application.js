@@ -14,5 +14,5 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require turbolinks
-//= require questions.js
+//= require_directory assets
 //= require_tree .
