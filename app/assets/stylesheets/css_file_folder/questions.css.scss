@@ -1,0 +1,382 @@
+#filler{
+  height:10px}
+
+#alert1{
+  display: none;
+  margin-bottom: 0px
+}
+
+/**NAV BAR**/
+
+#navbar{
+  height:80px;
+  width:100%;
+  position:fixed;
+  background:#2b2b2b;
+  color:white;
+  top:0;
+  left:0;
+  flex-direction:row;
+  z-index:200
+}
+
+img, #logo{
+  height:80px;
+  width: 150px;
+  position:absolute;
+  left:2%;
+  z-index:100;
+}
+
+#signin{
+  position: absolute;
+  left:90%;
+  top: 25%;
+  background-color:white;
+  border-radius:0px;
+  border: none; 
+  height:35px;
+  width: 100px
+}
+
+/**Footer**/
+#footer{
+  position:fixed;
+  width:100%;
+  left:0;
+  bottom:0px;
+  height:40px;
+  background:transparent; 
+}
+
+#copyright{
+  position:absolute;
+  top:10px;
+  left:50px;
+  font-size:x-small;
+  padding-bottom:2px;
+  vertical-align:middle;
+  margin-bottom:5px;
+  color:black}
+
+/**big window**/
+ #mapbox{
+  background-color: white;
+  width: 950px;
+  height: 425px;
+  margin:auto;
+  padding: 2% 0% 5% 0%;
+  display:block;
+  }
+
+
+/**Question**/
+.questionb{
+  width:20%;
+  height:25%;
+  
+  
+  }
+#box_filler{
+  display: flex;
+  top: -300px
+  }
+
+#question_box{
+  display:block;
+  width:100%;
+  text-align:center;
+  vertical-align:middle;
+  padding-top:3%;
+  font-size:7.5vh;
+  font-family:'Robo', sans-serif;
+  position:relative;
+  margin-top: 2% 
+  }
+
+/**Cuisine Selectors**/
+table{
+  position:relative;
+  margin: 0 auto;
+}
+
+td{
+  height:30px;
+  width:100px;
+}
+
+.inbox{
+  height:75px;
+  width:160px;
+  border:3px solid black;
+  margin:10px 20px 10px 20px;
+}
+
+.cuisinet{
+ position:relative;
+  top:-10px;
+  font-weight:300;
+  font-family:'Roboto', sans-serif;
+}
+
+#americant{
+  left:-5px
+}
+
+#asiant{
+  left:20px
+}
+
+#frencht{
+  left:13px;
+}
+
+#gastropubt{
+left:-15px;
+}
+
+#greekt{
+  left:19px;
+}
+
+#indiant{
+  left:17px;
+}
+
+#italiant{
+  left:17px;
+}
+#mexicant{
+left:1px;
+}
+
+#seafoodt{
+left:1px;
+}
+
+#steakt{
+left:19px;
+}
+
+#sushit{
+left:19px;
+}
+
+
+
+
+/**location Selectors**/
+#location{
+  position:relative;
+  margin:0 auto;
+  padding-left:15px
+}
+ 
+#location td{
+  margin-top:0px;
+  padding-bottom:10px;
+}
+.row2{
+  padding-bottom: 0px
+}
+
+.inbox2{
+  height:70px;
+  width:160px;
+  border:3px solid black;
+  margin-right:16px;
+  vertical-align:middle
+}
+
+.cuisinet2{
+ position:relative;
+  top:-5px;
+  font-weight:300;
+  font-family:'Roboto', sans-serif;
+  font-size:1.5em
+}
+
+#logan_squarez,#univ_vilz, #nchicagolandz, #schicagolandz, #wchicagolandz{
+ position:relative;
+ top:10px}
+
+#goldcoastt{
+  left:6px}
+
+#hyde_parkt{
+  left: 8px
+}
+
+#univ_vilt, #logan_squaret, #nchicagolandt, #schicagolandt, #wchicagolandt{
+ top:-20px;
+  left: -10px
+}
+#uptownt{
+  left:16px}
+
+#logan_squaret{
+  top:-5px;
+}
+
+#logan_squarez{
+  top:0px;
+}
+
+/**Map**/
+#maptrig{
+  position:relative;
+  top:250px;
+  left:35%;
+  border:none;
+  text-decoration:none;
+  font-family:'Roboto', sans-serif;
+}
+
+/**Answer Boxes***/
+#option_container{
+  display:flex;
+  flex-direction:column;
+  height:10%;
+  }
+
+.option{
+  background-color:inherit;
+  margin-top: 1px;
+  position:relative;
+  border: none;
+  height: 25%; 
+  display:block;
+  width:950px;
+  top:-40px
+}
+
+/*Question3*/
+.answers{
+  margin:0 auto;
+  text-align: center;
+  width:100%;
+  z-index: 200
+
+}
+
+.qans{
+  margin-top: 0px;
+  width:100%;
+  height:20%;
+  font-size: 2em;
+  border:none;
+  border-radius: 30;
+}
+
+/**Text Styling**/
+table h3,table p{
+  display:inline;
+  float:left;
+  margin-left:20px;
+  color:#1B0A2A;
+  font-family:'Roboto', sans-serif;
+  font-weight:300;
+  font-size:5vh;
+  text-align:center;
+  vertical-align:middle;
+}
+.optionletter, .answer{
+  position:absolute;
+  left:20px;
+  top:0px}
+
+.answer{
+  left:30%;
+  display:inline;
+  width:30%  
+}
+
+.questiont{
+  font-size:.8em;
+  top: -2px;
+  position:relative;
+  z-index:100}
+
+
+p{
+  float:right;
+  margin-right:50%;
+  margin-top:20px;
+  display:inline-block;
+  }
+
+/**Help box**/
+
+#help{
+  position:fixed;
+  left:1%;
+  bottom:1%;
+  border:black solid 1px;
+  padding:1%;
+  font-size:2vw}
+
+.bottomnav{
+  width: 100%;
+  text-align: center
+}
+.pagination{
+  width: 5%;
+  margin-bottom: 5px;
+  left:10%;
+}
+.progress{
+  width:80%;
+  display: inline-block;
+}
+
+ .pagination a{
+  width:100%%;
+  height:10%;
+  font-size: 1.5em;
+  text-align: center;
+ }
+
+/**Hover**/
+.option:hover{
+  background-color:#1C1C1C;}
+.option:hover p{
+  color:#FAFAFA;
+  font-weight:900;
+  display:inline-block;
+  vertical-align:middle;
+  right:10px}
+
+.option:hover h3{
+  position:absolute;
+  left:0;
+  color:#FAFAFA;
+  font-weight:900; 
+}
+
+
+
+#help:hover{
+  background-color:black;
+  color: white}
+#next a:visited{
+  color:black}
+
+/**Questions hidden**/
+
+
+.question2, .question3, .question4, .question5, .slide{
+  display:none}
+
+#q1{
+  top:-20px
+}
+#q2{
+  top:-20px
+}
+
+#q3, #q5{
+  top:-20px;
+}
+
+#q5{
+  top:-25px}
