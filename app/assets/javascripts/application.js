@@ -15,4 +15,5 @@
 //= require bootstrap
 //= require turbolinks
 //= require_directory ../../assets
+//= require questions.js
 //= require_tree .
