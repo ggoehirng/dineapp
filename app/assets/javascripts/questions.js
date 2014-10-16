@@ -10,11 +10,11 @@ var ans_4;
 var ans_5;
 var bos;
 var rscore;
-var results= '../ajax.html?'
+var results= '../ajax.html?';
 
 function random(x,y) {
     return Math.floor(Math.random() * (x-y+1) + y)} ;
-
+    
 $('.inbox').hover(function(){
   bos=$(this).attr('id');
   bos=bos.replace('z','t');
@@ -34,6 +34,8 @@ $('.inbox2').hover(function(){
   $(this).css('background','white');
   $('#'+bos).css('color', 'black');
 });
+
+
 
 $("#back").on( "click", function(){
   if ($(".question1").css("display") === 'block'){
@@ -175,7 +177,7 @@ $(".3").click(function() {
       if (ans_3 == "one") {
         choice_3=-600;
   } else if ( ans_3 == "two") {
-        choice_3=3000;
+        choice_3=300;
   } else if ( ans_3 == "three") {
         choice_3=0;
   }else if ( ans_3 == "four") {
@@ -227,7 +229,6 @@ $(".5").click(function() {
   window.location.href= results + rscore  
  
 })
-
   
 
       
