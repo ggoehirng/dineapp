@@ -17,18 +17,22 @@ $.getJSON("../restaurants.json", function(response){
       address1 = r0.address.split('%')[0];
       address2 = r0.address.split('%')[1];
     $('.restaurants').prepend("<div id='result" + numb +"'' class='restaurant'>"+
-        "<p id='rname" + numb+ "' class='restaurant_name'>" + r0.name + "</p>"+
+        "<div id='named" + numb + "'class='rnamed'>" +
+        "<p id='rname" + numb+ "' class='restaurant_name'>" + r0.name + "</p></div>"+
         "<image id='rpicture" + numb + "' class='rpicture circle' src='" + 
-        r0.image + "'>" +
-       	"<div id='rinfo" + numb + "' class='rinfo'>" +
+        r0.image + "'>" + 
+          "<div id='cuisined" + numb + "'class='rcuisined'>" +
+          
           "<p id='cuisine" + numb + "'class='rcuisine'>" +
           r0.cuisine + 
           "</p>" +
-          "<p id='desc" + numb+ "' class='rdesc'>" + r0.description + "</p>" +
+          "</div>" +
+          "<div id='descd" + numb+ "' class='rdescd'>" +
+          "<p id='desc" + numb+ "' class='rdesc'>" + r0.description + "</p> </div>"+
+           "<div id='addressd" + numb + "' class='raddressd'>" +
           "<p id='address" + numb + "' class='raddress'>" +
           address1 + "<br>" + address2 +
-          "</p>" +
-          "</div>" +
+          "</p> </div>"+
           "<a class='more btn btn-default' id='" + r0.name + "' href='" + more + rest.id + "'>View More</button>" +
         "</div>");
       console.log('success ' + index + " " +numb);

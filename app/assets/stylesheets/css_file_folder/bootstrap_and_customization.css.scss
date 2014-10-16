@@ -1,10 +1,9 @@
-//Navbar styling
-$navbar-border-radius: 0px;
-$navbar-inverse-link-color: #fff;
-//$navbar-margin-bottom: 0px;
-$progress-bar-bg: #000;
 .navbar-left{
 	margin-left:500px
+}
+
+.navbar-inverse .navbar-nav li a{
+	color:white
 }
 
 .alert{

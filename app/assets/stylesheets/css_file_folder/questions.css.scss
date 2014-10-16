@@ -6,59 +6,6 @@
   margin-bottom: 0px
 }
 
-/**NAV BAR**/
-
-#navbar{
-  height:80px;
-  width:100%;
-  position:fixed;
-  background:#2b2b2b;
-  color:white;
-  top:0;
-  left:0;
-  flex-direction:row;
-  z-index:200
-}
-
-img, #logo{
-  height:80px;
-  width: 150px;
-  position:absolute;
-  left:2%;
-  z-index:100;
-}
-
-#signin{
-  position: absolute;
-  left:90%;
-  top: 25%;
-  background-color:white;
-  border-radius:0px;
-  border: none; 
-  height:35px;
-  width: 100px
-}
-
-/**Footer**/
-#footer{
-  position:fixed;
-  width:100%;
-  left:0;
-  bottom:0px;
-  height:40px;
-  background:transparent; 
-}
-
-#copyright{
-  position:absolute;
-  top:10px;
-  left:50px;
-  font-size:x-small;
-  padding-bottom:2px;
-  vertical-align:middle;
-  margin-bottom:5px;
-  color:black}
-
 /**big window**/
  #mapbox{
   background-color: white;
@@ -88,7 +35,7 @@ img, #logo{
   text-align:center;
   vertical-align:middle;
   padding-top:3%;
-  font-size:7.5vh;
+  font-size:60px;
   font-family:'Robo', sans-serif;
   position:relative;
   margin-top: 2% 
@@ -185,41 +132,21 @@ left:19px;
   width:160px;
   border:3px solid black;
   margin-right:16px;
-  vertical-align:middle
+  position:relative;
 }
 
 .cuisinet2{
- position:relative;
-  top:-5px;
+ position:absolute;
   font-weight:300;
   font-family:'Roboto', sans-serif;
-  font-size:1.5em
+  font-size:1.5em;
+  width:100px;
+  margin-top: 3%;
+  vertical-align: middle;
 }
 
-#logan_squarez,#univ_vilz, #nchicagolandz, #schicagolandz, #wchicagolandz{
- position:relative;
- top:10px}
-
-#goldcoastt{
-  left:6px}
-
-#hyde_parkt{
-  left: 8px
-}
-
-#univ_vilt, #logan_squaret, #nchicagolandt, #schicagolandt, #wchicagolandt{
- top:-20px;
-  left: -10px
-}
-#uptownt{
-  left:16px}
-
-#logan_squaret{
-  top:-5px;
-}
-
-#logan_squarez{
-  top:0px;
+#downtownt, #uptownt, #goldcoastt, #hyde_parkt{
+  margin-top:12.5%
 }
 
 /**Map**/
@@ -276,7 +203,7 @@ table h3,table p{
   color:#1B0A2A;
   font-family:'Roboto', sans-serif;
   font-weight:300;
-  font-size:5vh;
+  font-size:30px;
   text-align:center;
   vertical-align:middle;
 }
