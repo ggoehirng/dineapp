@@ -19,6 +19,11 @@
     <%= f.label :image %><br>
     <%= f.url_field :image%>
   </div>
+   <div class="field">
+    <%= f.label :featured %><br>
+     <%= f.radio_button :featured, "0" %><%= f.label :false %> </br>
+    <%= f.radio_button :featured, "1" %><%= f.label :true %>
+  </div>
   <div class="field">
     <%= f.label :cuisine %><br>
     <%= f.text_field :cuisine %>

@@ -1,9 +1,31 @@
-<div class="container">
+<div class="container fcont">
 	<div class='spacer'></div>
-	<div class='jumbotron'>
-		<h1> Welcome to Dine. </h1>
-		<%= link_to "Log in", new_user_session_path, class: "btn btn-default" %>
-		<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary" %>
+	<h1 class='tittle'> New and Featured this week on DINE.</h1>
+	<div class='features'>
+	<script type="text/javascript">
+		var numb = 0;
+    var more = "/restaurant?"
+		$.getJSON("../restaurants.json", function(response){
+  $.each(response, function(index, rest){
+
+  		if (rest.featured === true){
+  			numb += 1;
+  			var feature = {name: rest.name, feature: rest.feature, image: rest.image, description: rest.description, neigborhood: rest.neigborhood, price: rest.price_range, cuisine: rest.cuisine, id: rest.id};
+  			$('.features').append("<div class='feature_box col-md-4" + numb +  
+          "'id='featured"+ numb + "'> <div id='left"+ numb +"' class='left'>"+
+  				"<img src='" + feature.image +"' class='pic' id='pic" + 
+  				numb + "'> </div> <div class='right' id='right" + numb +"'>"+
+  				"<h3 class='fname'>" + feature.name + "</h3>" +
+  				"<p class='fdescription' id='fdescription"+ numb + "'>"+ 
+  				feature.description + "</p>"+
+  				"<p class='tags' id='tag" + numb + "'>" + 
+  				feature.cuisine + ", "+feature.neigborhood + " <br>" + feature.price + "</p>"+"<a class='fmore btn btn-default' id='" + feature.name + "' href='" + more + feature.id + "'>View More</button>"+
+  				 "</div></div>");
+  			console.log(feature.feature);
+
+  		}})})
+      
+
+	</script>
 	</div>
 </div>
-
