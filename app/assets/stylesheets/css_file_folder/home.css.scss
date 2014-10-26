@@ -1,5 +1,4 @@
 body{
-	background:#EEEEEE;
 	width: 100%;
 	min-height: 100%
 }
@@ -17,29 +16,38 @@ body{
 	text-align:center
 }
 .feature_box{
-	padding:10px;
-	padding-left: 10px;
-	width: 450px;
-	height: 250px;
-	background: #56626E;
+	width: 350px;
+	height: 200px;
 	display: inline-block;
 	margin:0 auto;
-	margin: 10px
+	margin: 10px;
+	border-radius:05%
 	
 }
 
-.left, .right{
-	width: 215px;
-	height: 230px;
+.backimg, .topt, .darken div{
+	width: 350px;
+	height: 200px;
 	position: absolute;
+	border-radius:05%
 	/*border:1px solid red*/
 	}
 
-.left{
+
+.backimg{
+	z-index:1;
 }
 
-.right{
-	margin-left: 215px
+.darken div{
+	z-index:3;
+	background: black;
+	opacity: .8;
+	display:none;
+}
+
+.feature_box:hover div{
+	display:block;
+	flex-direction: column;
 }
 
 .feature_box:nth-of-type(even){
@@ -60,12 +68,11 @@ body{
 }
 
 .pic{
-	height:170px;
-	width: 170px;
-	border-radius:50%;
+	height:200px;
+	width: 350px;
 	/*border: 3px solid black;*/
 	position: relative;
-	top:20px
+		border-radius:05%
 }
 
 .fname, .fdescription, .tags, .tittle{
@@ -78,19 +85,21 @@ body{
 }
 
 .fdescription, .tags{
-	left: 100px;
-	width:200px;
-	text-align: center;
-	margin-top: 10px
+	width:350px;
+	margin: 0 auto;
+	margin-top: 8px;
+	opacity: .9;
 
 }
 
 .fname{
 	font-size: 1.75em;
+	margin: 0 auto;
+	margin-top:20px
 	}
 .fmore{
-	top:180px;
-	left:62px;
+	top:160px;
+	left:130px;
 	border-radius: 0px;
 	border:none;
 	position: absolute;
