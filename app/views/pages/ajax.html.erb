@@ -7,15 +7,20 @@
 var url= "../restaurants.json";
 var r0 = {};
 var score= Number(window.location.href.split('?')[1]);
+var scorep= score + 50;
+var scoren= score - 50;
 var numb = 0;	
 var more = "/restaurant?"
 $.getJSON("../restaurants.json", function(response){
-  $.each(response, function(index, rest){
-    if (rest.score == score){
+  //$.each(response, function(index, rest){
+    for (i=0; i < response.length; i++){
+      var rest = response[i];
+    if (rest.score <= scorep && rest.score >= scoren){
     	numb += 1;
       var r0 = { id: rest.id, name: rest.name, image:rest.image, cuisine:rest.cuisine, description:rest.description, address: rest.address, website:rest.website, score: rest.score}
       address1 = r0.address.split('%')[0];
       address2 = r0.address.split('%')[1];
+      if (numb > 3) break;
     $('.restaurants').prepend("<div id='result" + numb +"'' class='restaurant'>"+
         "<div id='named" + numb + "'class='rnamed'>" +
         "<p id='rname" + numb+ "' class='restaurant_name'>" + r0.name + "</p></div>"+
@@ -35,12 +40,12 @@ $.getJSON("../restaurants.json", function(response){
           "</p> </div>"+
           "<a class='more btn btn-default' id='" + r0.name + "' href='" + more + rest.id + "'>View More</button>" +
         "</div>");
-      console.log('success ' + index + " " +numb);
+      console.log('success ' + i + " " +numb);
   } else{
-    console.log('no matches ' + index);
+    console.log('no matches ' + i);
   }
     
- })});
+ }});
   
 
 
