@@ -107,7 +107,7 @@ $(".ans1").click(function() {
   } else if ( ans_1 == "gastropub") {
          choice_1=25;
   } else if ( ans_1 == "american") {
-         choice_1=10;
+         choice_1=0;
   } else if ( ans_1 == "seafood") {
          choice_1= -25;
   } else if ( ans_1 == "sushi") {
