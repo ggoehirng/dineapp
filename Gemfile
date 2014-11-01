@@ -13,7 +13,6 @@ gem 'jbuilder', '~> 2.0'
 gem 'devise'
 gem 'mailchimp-api', '~> 2.0'
 gem 'gibbon', github: "amro/gibbon"
-gem 'will_paginate', '~> 3.0.5'
 gem 'sprockets'
 gem 'jquery-turbolinks'
 gem 'intercom-rails', '~> 0.2.26'
