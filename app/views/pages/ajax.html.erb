@@ -40,6 +40,13 @@ $.getJSON("../restaurants.json", function(response){
           "</p> </div>"+
           "<a class='more btn btn-default' id='" + r0.name + "' href='" + more + rest.id + "'>View More</button>" +
         "</div>");
+        /*if (15 < r0.name.length < 19){
+          $('.restaurant_name').css("font-size", "1.6em")
+        } else if(r0.name.length > 19){
+          $('.restaurant_name').css("line-height", "30px");
+          $('.restaurant_name').css("color", "red");
+          $('.restaurant_name').css("font-size", "1em")
+        }*/
       console.log('success ' + i + " " +numb);
   } else{
     console.log('no matches ' + i);
