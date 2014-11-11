@@ -36,7 +36,7 @@
   vertical-align:middle;
   padding-top:3%;
   font-size:60px;
-  font-family:'Robo', sans-serif;
+  font-family: 'lato';
   position:relative;
   margin-top: 0% 
   }
@@ -56,15 +56,15 @@ td{
 .inbox{
   height:75px;
   width:160px;
-  border:3px solid black;
+  border:2px solid black;
   margin:10px 20px 0px 20px;
 }
 
 .cuisinet{
  position:relative;
   top:-10px;
-  font-weight:300;
-  font-family:'Roboto', sans-serif;
+  font-weight:400;
+  font-family: 'lato';
 }
 
 #americant{
@@ -76,7 +76,7 @@ td{
 }
 
 #frencht{
-  left:13px;
+  left:12px;
 }
 
 #gastropubt{
@@ -95,15 +95,15 @@ left:-15px;
   left:17px;
 }
 #mexicant{
-left:1px;
+left:3px;
 }
 
 #seafoodt{
-left:1px;
+left:5px;
 }
 
 #steakt{
-left:19px;
+left:22px;
 }
 
 #sushit{
@@ -122,7 +122,7 @@ left:19px;
  
 #location td{
   margin-top:0px;
-  padding-bottom:10px;
+  padding-bottom:9px;
 }
 .row2{
   padding-bottom: 0px
@@ -131,15 +131,15 @@ left:19px;
 .inbox2{
   height:70px;
   width:160px;
-  border:3px solid black;
+  border:2px solid black;
   margin-right:16px;
   position:relative;
 }
 
 .cuisinet2{
  position:absolute;
-  font-weight:300;
-  font-family:'Roboto', sans-serif;
+  font-weight:400;
+  font-family: 'lato';
   font-size:1.5em;
   width:100px;
   margin-top: 3%;
@@ -157,7 +157,7 @@ left:19px;
   left:35%;
   border:none;
   text-decoration:none;
-  font-family:'Roboto', sans-serif;
+  font-family: 'lato';
 }
 
 /**Answer Boxes***/
@@ -202,7 +202,7 @@ table h3,table p{
   float:left;
   margin-left:20px;
   color:#1B0A2A;
-  font-family:'Roboto', sans-serif;
+  font-family: 'lato';
   font-weight:300;
   font-size:30px;
   text-align:center;
@@ -269,7 +269,7 @@ p{
   background-color:#1C1C1C;}
 .option:hover p{
   color:#FAFAFA;
-  font-weight:900;
+  font-weight:200;
   display:inline-block;
   vertical-align:middle;
   right:10px}
@@ -278,7 +278,7 @@ p{
   position:absolute;
   left:0;
   color:#FAFAFA;
-  font-weight:900; 
+  font-weight:700; 
 }
 
 
