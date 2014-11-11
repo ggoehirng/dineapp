@@ -29,7 +29,6 @@ ActiveRecord::Schema.define(version: 20141110041443) do
     t.datetime "updated_at"
     t.string   "image"
     t.string   "book"
-    t.decimal  "feature"
     t.boolean  "featured"
     t.string   "general_tags"
   end
